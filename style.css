@@ -1,32 +1,26 @@
-/* Define the background color and font for the whole page */
-body {
-  background-color: #F0F0F0;
-  font-family: Arial, sans-serif;
-}
-
-/* Define the color and size of the main heading */
-h1 {
-  color: #333333;
-  font-size: 36px;
-}
-
-/* Define the color and size of the paragraphs */
-p {
-  color: #666666;
-  font-size: 18px;
-}
-
-/* Define the style of the navigation menu */
-.navbar {
-  list-style-type: none;
+/* Reset some default styles */
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+  list-style: none;
 }
 
-/* Define the style of the navigation links */
+/* Apply a background color to the body */
+body {
+  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the navigation menu */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
 .navbar a {
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -34,7 +28,32 @@ p {
   text-decoration: none;
 }
 
-/* Change the color of the navigation links on hover */
 .navbar a:hover {
-  background-color: #777777;
+  background-color: #ddd;
+  color: black;
 }
+
+/* Style the main content */
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+/* Style the address at the bottom */
+address {
+  margin-top: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
